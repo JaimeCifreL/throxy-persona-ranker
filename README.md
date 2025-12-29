@@ -115,7 +115,7 @@ Visit http://localhost:3000
 4. Switch to "Leads" tab, select your batch, and click "Start AI Ranking"
 5. View, sort, and export ranked leads
 
-## 🚢 Deployment (Vercel)
+##  Deployment (Vercel)
 
 ### 1. Push to GitHub
 ```bash
@@ -276,7 +276,8 @@ The AI ranks leads based on:
 
 During development, I considered the following optional improvements for future iterations:
 1. **Ranking without filters**: Option to view complete results ignoring business exclusions
-2. **Custom instructions for AI**: Text input to allow user-specified guidance for ranking logic
+2. **Custom instructions for AI**: Text input to allow user-specified guidance for ranking logic.
+   
 These ideas were not implemented due to time constraints but demonstrate potential enhancements for usability, transparency, and flexibility.
 
 ##  License
