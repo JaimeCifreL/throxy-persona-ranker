@@ -10,11 +10,11 @@ throxy-persona-ranker/
 
 AI-powered B2B lead qualification and ranking system. Built for the Throxy technical challenge.
 
-## 🚀 Live Demo
+##  Live Demo
 
 [Deploy URL will be here after Vercel deployment]
 
-## 📋 Features
+##  Features
 
 - **AI-Powered Ranking**: Uses OpenAI GPT-4o-mini to rank leads against an ideal customer persona
 - **CSV/TSV Import**: Upload leads in bulk, grouped by import batch
@@ -27,7 +27,7 @@ AI-powered B2B lead qualification and ranking system. Built for the Throxy techn
 - **Supabase/Postgres Backend**: Scalable, secure data storage
 - **TypeScript**: Full type safety
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ### Tech Stack
 - **Frontend**: Next.js 16 (App Router) + React 19 + TailwindCSS
@@ -59,7 +59,7 @@ throxy-persona-ranker/
 └── supabase.sql                 # Database schema
 ```
 
-## 🛠️ Local Setup
+##  Local Setup
 
 ### Prerequisites
 - Node.js 20+ and npm
@@ -143,7 +143,7 @@ vercel env pull .env.local
 npm run ingest
 ```
 
-## 📝 Delivery Instructions
+##  Delivery Instructions
 
 1. Deploy to Vercel and verify the app is public
 2. Send the Vercel URL and your GitHub repo link as your submission
@@ -204,14 +204,14 @@ npm run ingest
 - Reasoning field provides transparency for sales teams
 - Temperature 0.3 balances consistency with nuance
 
-## 🔄 Tradeoffs & Future Improvements
+##  Tradeoffs & Future Improvements
 
 ### Time Constraints
 **What I prioritized (MVP):**
-- ✅ Core ranking functionality
-- ✅ Clean UI with sorting/filtering
-- ✅ Postgres + API architecture
-- ✅ End-to-end deployment readiness
+-  Core ranking functionality
+-  Clean UI with sorting/filtering
+-  Postgres + API architecture
+-  End-to-end deployment readiness
 
 ### Technical Debt
 - **Error handling**: Basic alerts; would add toast notifications + retry logic
@@ -228,7 +228,7 @@ npm run ingest
   - Consider vector embeddings for pre-filtering (Supabase pgvector)
   - Cache rankings with TTL
 
-## 🚢 Deployment (Vercel)
+##  Deployment (Vercel)
 
 ### Step 1: Push to GitHub
 ```bash
@@ -256,14 +256,14 @@ vercel env pull .env.local
 npm run ingest
 ```
 
-## 📈 Performance Metrics
+##  Performance Metrics
 
 - **Filtering**: 200 leads --> 21 leads (89% reduction) in <1s
 - **Ranking**: 21 leads in ~10-15s (GPT-4o-mini)
 - **Cost per ranking**: ~$0.002 (21 leads × ~200 tokens each)
 - **Database**: <10ms query time for 21 leads
 
-## 🎯 Persona Matching Logic
+##  Persona Matching Logic
 
 The AI ranks leads based on:
 1. **Title-to-size fit**: Founders in startups (high), CEOs in enterprise (low)
@@ -272,7 +272,14 @@ The AI ranks leads based on:
 4. **Exclusion signals**: Finance/HR/Engineering roles
 5. **Industry bonus**: Companies selling to manufacturing/education/healthcare
 
-## 📝 License
+## Bonus Ideas (Not Implemented)
+
+During development, I considered the following optional improvements for future iterations:
+1. **Ranking without filters**: Option to view complete results ignoring business exclusions
+2. **Custom instructions for AI**: Text input to allow user-specified guidance for ranking logic
+These ideas were not implemented due to time constraints but demonstrate potential enhancements for usability, transparency, and flexibility.
+
+##  License
 
 MIT - Built for Throxy technical challenge
 
