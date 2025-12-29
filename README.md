@@ -1,3 +1,4 @@
+```
 throxy-persona-ranker/
 ├── src/
 │   ├── app/
@@ -5,7 +6,7 @@ throxy-persona-ranker/
 │   │   └── page.tsx              # Main UI with table
 │   └── lib/
 │       └── supabase.ts           # Database client + types
-
+´´´
 # Throxy Persona Ranker
 
 AI-powered B2B lead qualification and ranking system. Built for the Throxy technical challenge.
